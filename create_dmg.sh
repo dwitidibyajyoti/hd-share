@@ -1,13 +1,24 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Starting Production Build & DMG Creation for HDShare..."
+# Read version from Info.plist or use argument if provided
+PLIST_VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" Resources/Info.plist 2>/dev/null || echo "1.1.0")
+VERSION="${1:-$PLIST_VERSION}"
+
+# Normalize version tag format (e.g., v1.1.0)
+if [[ ! "$VERSION" =~ ^v ]]; then
+    VERSION_TAG="v$VERSION"
+else
+    VERSION_TAG="$VERSION"
+fi
+
+echo "🚀 Starting Production Build & DMG Creation for HDShare ($VERSION_TAG)..."
 
 # Step 1: Run the release build
 ./build_app.sh
 
 APP_BUNDLE="build/HDShare.app"
-DMG_NAME="HDShare-Installer.dmg"
+DMG_NAME="HDShare-${VERSION_TAG}.dmg"
 DMG_PATH="build/$DMG_NAME"
 VOLUME_NAME="HDShare"
 STAGING_DIR="build/dmg_staging"
