@@ -32,10 +32,10 @@ public final class LicenseManager: ObservableObject {
         }
     }
 
-    // Free users can only use WhatsApp Status (30s). All other presets require Pro license.
+    // Free users can use WhatsApp Status (30s & 60s). All other presets require Pro license.
     public func isFeatureAvailable(mode: SplitMode) -> Bool {
         if isLicensed { return true }
-        return mode == .whatsAppStatus30
+        return mode == .whatsAppStatus30 || mode == .whatsAppStatus60
     }
 
     // MARK: - Machine ID

@@ -37,7 +37,10 @@ cat <<EOF > "$TARGET_DIR/Contents/Info.plist"
             <array>
                 <string>public.movie</string>
                 <string>public.video</string>
-                <string>public.item</string>
+                <string>public.mpeg-4</string>
+                <string>com.apple.quicktime-movie</string>
+                <string>org.matroska.mkv</string>
+                <string>public.avi</string>
             </array>
         </dict>
     </array>

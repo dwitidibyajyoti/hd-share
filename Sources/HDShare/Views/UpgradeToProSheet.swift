@@ -7,10 +7,10 @@ public struct UpgradeToProSheet: View {
     @State private var inputKey: String = ""
     @State private var activationSuccess: Bool = false
     
-    // User can customize their Lemon Squeezy store link
-    public var buyURL: String = "https://lemonsqueezy.com"
+    // Lemon Squeezy checkout link
+    public var buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/14f97665-6146-4cf5-9952-027b89919c55"
 
-    public init(isPresented: Binding<Bool>, buyURL: String = "https://lemonsqueezy.com") {
+    public init(isPresented: Binding<Bool>, buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/14f97665-6146-4cf5-9952-027b89919c55") {
         self._isPresented = isPresented
         self.buyURL = buyURL
     }
@@ -47,7 +47,7 @@ public struct UpgradeToProSheet: View {
                     icon: "checkmark.circle.fill",
                     color: .green,
                     title: "Free Tier (Included)",
-                    desc: "WhatsApp Status 30-Second Lossless Slicing"
+                    desc: "WhatsApp Status 30-Second & 60-Second Lossless Slicing"
                 )
                 
                 proFeatureRow(

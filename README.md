@@ -7,10 +7,9 @@
 ## 💎 Pricing & Freemium Tiers
 
 - **🆓 Free Plan (Included Forever):**
-  - **WhatsApp Status (30-second lossless slices):** Free for all users with zero limits.
+  - **WhatsApp Status (30-second & 60-second lossless slices):** Free for all users with zero limits.
 - **👑 Pro Plan ($4.99 One-Time / Lifetime):**
   - **WhatsApp HD Chat (95 MB Limit):** Dynamically computed to stay under WhatsApp's 100 MB upload ceiling.
-  - **WhatsApp Status (60-second slices)**
   - **Discord Free & Email Attachment (25 MB Limit):** Fits Gmail, Apple Mail, Outlook, and Discord without Nitro.
   - **Telegram Large Video (2 GB Limit):** Slices full-length 4K movies & recordings.
   - **Custom File Size (MB) & Custom Duration (Seconds):** Set any target limit.

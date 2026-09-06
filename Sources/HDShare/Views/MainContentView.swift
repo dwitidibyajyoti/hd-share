@@ -92,7 +92,7 @@ public struct MainContentView: View {
                 .font(.title3)
             
             VStack(alignment: .leading, spacing: 2) {
-                Text("Free Plan: WhatsApp 30s Status Slicing Included")
+                Text("Free Plan: WhatsApp 30s & 60s Status Slicing Included")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 Text("Unlock WhatsApp 95MB HD Chat, 2GB Telegram, 25MB Discord/Email & Custom limits with Pro.")
@@ -280,7 +280,7 @@ public struct MainContentView: View {
                                     .fontWeight(splitMode == mode ? .semibold : .regular)
                                 
                                 if isAvailable {
-                                    if mode == .whatsAppStatus30 && !license.isLicensed {
+                                    if (mode == .whatsAppStatus30 || mode == .whatsAppStatus60) && !license.isLicensed {
                                         Text("FREE")
                                             .font(.system(size: 9, weight: .bold))
                                             .foregroundColor(.green)

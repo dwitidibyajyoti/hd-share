@@ -79,6 +79,7 @@ public struct MenuBarView: View {
                 
                 Picker("Target Preset", selection: $splitMode) {
                     Text("WhatsApp Status (30s)").tag(SplitMode.whatsAppStatus30)
+                    Text("WhatsApp Status (60s)").tag(SplitMode.whatsAppStatus60)
                     Text("WhatsApp 95MB (PRO)").tag(SplitMode.whatsAppHD)
                     Text("Discord/Email 25MB (PRO)").tag(SplitMode.discordEmail)
                     Text("Telegram 2GB (PRO)").tag(SplitMode.telegram2GB)
