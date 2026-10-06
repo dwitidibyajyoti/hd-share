@@ -8,9 +8,9 @@ public struct UpgradeToProSheet: View {
     @State private var activationSuccess: Bool = false
     
     // Lemon Squeezy checkout link
-    public var buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/14f97665-6146-4cf5-9952-027b89919c55"
+    public var buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/b8f19775-5b6e-4c9f-99ce-024630121607"
 
-    public init(isPresented: Binding<Bool>, buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/14f97665-6146-4cf5-9952-027b89919c55") {
+    public init(isPresented: Binding<Bool>, buyURL: String = "https://dwitiapps.lemonsqueezy.com/checkout/buy/b8f19775-5b6e-4c9f-99ce-024630121607") {
         self._isPresented = isPresented
         self.buyURL = buyURL
     }
